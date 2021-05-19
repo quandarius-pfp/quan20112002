@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <title>Quan</title>
+
+     </head>
+<body >
+    
+<div class="wrapper">
+    <?php
+    include("pages/header.php");
+    ?>
+
+<div>
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#SanPhamMoi">Sản Phẩm mới</a>
+    <a href="#GioHang">Giỏ Hàng</a>
+    <a href="#Lienhe">Liên Hệ</a>
+    <a href="#TinTuc">Tin Tức</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+ </div>   
+   
+<div class="Main">
+  <div class="row">
+    <div class="left" style="background-color:rgb(12, 12, 12); font-size: 40px;">
+      <h2 style="color: aliceblue;">Menu</h2>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+        <li><a href="#" style="font-size: 30px; font-family: Times, serif;">Bàn Phím Cơ</a></li>
+        <li><a href="# "style="font-size: 30px ; font-family: Times, serif;">Chuột Gaming</a></li>
+        <li><a href="#"style="font-size: 30px ; font-family: Times, serif;">Pad Chuột Max size</a></li>
+        <li><a href="#"style="font-size: 30px ; font-family: Times, serif;">Tai Nghe Gaming</a></li>
+        <li><a href="#"style="font-size: 30px ; font-family: Times, serif;">Phụ Kiện rời</a></li>
+        
+      </ul>
+    </div>
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+      
+
+  <div class="spham">
+    <ul class="produce">
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li><li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li><li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li><li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+      <li>
+        
+        <img src="img/banphimco.jpg" width="200px" height="200px"> 
+        <a href=""> 
+          <p class="title_produce">Tên Sản Phẩm : Tai Nghe sonny 001</p>
+            <p class="price_produce">Giá : 300K</p>
+        </a>
+      </li>
+
+
+    </div>
+  
+ 
+</div>
+</div>
+
+<p class="chantrang">
+  Made by : Nguyễn Trọng Quân <br>
+  Class: HTTT01-k15 <br>
+  <a href="https://www.facebook.com/quan.nguyentrong.35325" target="_blank"> My Facebook</a>
+  <a href="mailto:qquannguyentrong123@gmail.com">Send mail</a>
+
+</p>
+
+</body>
+</html>
